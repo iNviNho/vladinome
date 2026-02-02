@@ -1,21 +1,14 @@
 version: '3'
 
 services:
-  hazarder-apache:
-    image: registry.vladino.me:5000/vladinome:local
-    container_name: vladinome_local
-    networks:
-      - nginxdb_proxy
-    volumes:
-      - .:/var/www/html
+  application:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-local
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     command: /var/www/html/init-local.sh
-    restart: always
-    expose:
-      - 80
-    environment:
-      - VIRTUAL_HOST=vladinome.local
-      - TZ=Europe/Vienna
-
-networks:
-  nginxdb_proxy:
-    external: true
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 80:80

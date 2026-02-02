@@ -13,65 +13,63 @@ return [
     "description" => "Enthusiastic young PHP developer working hard with the best technologies to fulfill his dreams.",
 
     "motofirst" => "ENTHUSIASTIC",
-    "motosecond" => "YOUNG",
-    "motothird" => "DEVELOPER",
+    "motosecond" => "(YET) YOUNG",
+    "motothird" => "STAFF ENGINEER",
 
 
 
 
     "whoami" => "Who am I?",
-    "whoamitext" => "I am <strong>:years years</strong>, <strong>:months months</strong> and <strong>:days days</strong> old guy coming from a small town called 
-                <strong>Martin</strong> in a <strong>beautiful country Slovakia</strong>. 
-                I was born in a great family with inspiring people that taught me to always stay <strong>polite</strong>, don't loose <strong>friendliness</strong>, 
+    "whoamitext" => "I am <strong>32 years</strong> old guy coming from a small town called 
+                <strong>Martin</strong> located in a beautiful country called <strong>Slovakia</strong>. 
+                I was born in a great family with inspiring people that taught me to always stay <strong>polite</strong>, don't lose <strong>friendliness</strong>, 
                 <strong>work hard</strong>
                 and <strong>combine heart with mind</strong> when making decisions.<br><br>
 
-                Throughout my life i came across some very exciting and interesting things that formed me into a person i am now with a goal and 
-                path that i keep <strong>following every single day.</strong><br><br>
+                Throughout my life I came across exciting and interesting experiences that formed me into a person I am now with a goal and 
+                path that I aim <strong>to follow every single day.</strong><br><br>
 
                 My first steps with technologies started at university back in 2012. What followed afterwards had the biggest impact on my knowledge. 
-                We can count an amount of numerous projects i was working on and countless hours watching, learning and reading docs behind a closed door. 
-                I am a believer of a quote that <strong>it does not count what you do on a pitch while game is on, but what you do afterwards.</strong>",
+                We can count an amount of various projects I was working on and countless hours watching, learning and reading docs behind a closed door. 
+                I am a believer of a quote that <strong>it does not count what you do on a pitch while game is on, but what you do afterwards.</strong>
+                
+                <br><br>Oh, did I mention I have a loving wife and adorable 2 kids?",
 
 
 
-    "drugheader" => "Drugs a developer like me is addicted to",
-    "druglove" => "Love",
+    "drugheader" => "Drugs a person like me is addicted to",
+    "druglove" => "Family",
     "drughome" => "Home",
     "drugfriends" => "Friends",
-    "drugcoding" => "Coding",
-    "drugdog" => "Dog",
-    "drugcar" => "Car",
-    "druglovetext" => "Without a love i am a human body with an amputated spirit",
-    "drughometext" => "Without a home i would have no place to come when i succeed or screw up",
-    "drugfriendstext" => "Without a friends i would have been a book without pages",
-    "drugcodingtext" => "I simply love coding and every aspect it brings",
-    "drugdogtext" => "I can not evaluate how much happiness and joy had animals already gave me",
-    "drugcartext" => "Great day is to put some music on and spent hours digging in a car",
+    "drugcoding" => "Technology",
+    "drugdog" => "Nature",
+    "drugcar" => "Books",
+    "druglovetext" => "Raising well-behaved, intelligent kids with the sweetest woman I have ever met",
+    "drughometext" => "Building a home surrounded by beautiful views to spend lovely time with my close ones",
+    "drugfriendstext" => "To enjoy everything friendship brings — joy, fun, and people to share life’s ups and downs with",
+    "drugcodingtext" => "I simply love technology and every aspect it brings",
+    "drugdogtext" => "I can’t get enough of beautiful green hills and stunning natural scenery",
+    "drugcartext" => "I love books — for the wisdom they give and the fascinating (even fictional) stories they share",
 
 
-    "lifeofadeveloper" => "Life of a Developer",
+    "lifeofadeveloper" => "My life",
 
 
 
 
     "myinfo" => "Martin (Slovakia), 19th of May 1993<br>
-                        Nationality: Slovak<br>
-                        Email: vladino.vrab@gmail.com<br>
-                        Phone: (Slovak) 00421 902 739 429<br>
-                        Driving license B<br>",
+                        Nationality: Slovak<br>",
 
     "summary" => "SUMMARY",
-    "summarytext1" => "Proactive and dedicated software engineer with 6+ years of experience in web development.",
-    "summarytext2" => "<li>Analyzing, planning and developing information systems, e-shops, APIs and custom made projects</li>
-                        <li>Focused on projects related either to B2B or B2C</li>
-                        <li>Currently working as a Senior PHP developer for the biggest cryptocurrency trading platform in Europe</li>",
+    "summarytext1" => "Proactive and dedicated software engineer with 10+ years of experience in software engineering and distributed systems.",
+    "summarytext2" => "<li>Staff Software Engineer at Bitpanda, shaping architecture and technical direction across multiple teams</li>
+                        <li>Experience leading trade engine development for Europe's leading multi-asset trading platform</li>
+                        <li>Founded and successfully exited Notifea, an email & SMS SaaS serving 300+ clients</li>",
 
     "education" => "EDUCATION",
     "educationschool" => "<strong>System Engineering and Informatics</strong><br>
                         Brno University of Technology (VUT)<br>
                         Faculty: Faculty of Economics<br>
-                        Marks Average: 1.45<br>
                         Master Thesis: Design of an Information System Part. Mark: B",
     "educationnettecertificate" => "Certification of mastering Nette framework",
 
@@ -85,18 +83,39 @@ return [
     "firststepstext" => "<li>first time getting in touch with web development and its technologies</li>
                         <li>learning as much as possible to build my first website using famous czech PHP framework - Nette</li>
                         <li>created 3 custom made websites from scratch</li>",
-    "artexeheader" => "Web developer, Software engineer and Team master",
-    "artexetext" => "<li>my first real job as a web developer</li>
-                            <li>building professionally prepared and custom made websites with specific functionality to serve clients needs</li>
-                            <li>developing self-made information systems with dozens of modules for different business types and customers</li>
-                            <li>team master for junior developers</li>
-                            <li>being a part of company business planning</li>",
-    "bitpandaheader" => "Software engineer",
-    "bitpandatext" => "<li>working on an API part of the biggest cryptocurrency trading platform in Europe with more than 850 000 customers</li>
-                            <li>integrating API with different payment providers, identity providers, mail providers, sms & voice call providers and other 3rd party libraries</li>
-                            <li>integrating features and combining internal services with a great emphasis on security, reliability, fastness and speed</li>
-                            <li>getting in touch with a different programming approaches, continuous integration, code writing styles and technologies</li>
-                            <li>working with one of the best programmers in the Europe :)</li>",
+    "artexeheader" => "Fullstack Developer",
+    "artexetext" => "<li>Full stack developer building information systems for small local businesses</li>
+                            <li>Building professionally prepared and custom made websites with specific functionality to serve client needs</li>
+                            <li>Developing self-made information systems with dozens of modules for different business types</li>
+                            <li>Team master for junior developers</li>",
+
+    "bitpanda1header" => "Software Engineer",
+    "bitpanda1text" => "<li>Designed, implemented, and maintained microservices used by 3+ million clients</li>
+                            <li>Built major features for Europe's leading multi-asset trading platform</li>
+                            <li>Integrated APIs with payment providers, identity providers, and third-party services</li>",
+
+    "notifeaheader" => "Founder",
+    "notifeatext" => "<li>Founded an email and SMS service provider for small to medium-sized companies in Slovakia</li>
+                            <li>Built reliable, high-performance software serving 300+ clients</li>
+                            <li>Balanced full-time job and personal life while growing the startup</li>
+                            <li>Successfully sold the company in 2023</li>",
+
+    "bitpanda2header" => "Technical Lead",
+    "bitpanda2text" => "<li>Led a team of highly skilled engineers building new Trade engine</li>
+                            <li>Focused on event-driven architecture for highly-available, scalable microservices</li>
+                            <li>Working with Java, Node.js, and PHP programming languages</li>",
+
+    "bitpanda3header" => "Lead Software Engineer",
+    "bitpanda3text" => "<li>Led Bitpanda's Trade Engine development, pushing the boundaries of technology and performance</li>
+                            <li>Provided technical leadership and guidance for high-impact projects</li>
+                            <li>Created comprehensive architectural diagrams and technical documentation</li>
+                            <li>Aligned with company's strategic goals and explored emerging technologies</li>",
+
+    "bitpanda4header" => "Staff Software Engineer",
+    "bitpanda4text" => "<li>Working on architecture, technical direction, and scaling impact across multiple teams</li>
+                            <li>Shaping how trading systems are designed and built</li>
+                            <li>Working with Lead Engineers and Engineering Managers to turn complex problems into clear technical direction</li>
+                            <li>Fostering a strong learning culture through book clubs and deep technical exploration</li>",
 
     "now" => "NOW",
 
@@ -164,9 +183,16 @@ return [
                         </ul>",
 
 
+    "frameworks" => "Frameworks",
+    "messagebrokers" => "Message Brokers",
+    "cloudinfra" => "Cloud & Infrastructure",
+    "architecturepatterns" => "Architecture",
+    "freelance" => "Freelance",
+
     "languages" => "LANGUAGES",
     "languagesnormal" => "Languages",
     "slovak" => "Slovak",
+    "czech" => "Czech",
     "english" => "English",
     "german" => "German",
     "russian" => "Russian",
@@ -177,9 +203,15 @@ return [
                 <li>hiking</li>
                 <li>sports activities</li>
                 <li>learning new technologies</li>
-                <li>digging in a car</li>
+                <li>building 3D games and reading about game development</li>
                 <li>watching movies</li>
                 <li>hanging out with friends</li>",
+
+    "hobbyprojects" => "HOBBY PROJECTS",
+    "hobbyproject1name" => "cabinparser",
+    "hobbyproject1desc" => "Lightweight Java application for analyzing cabin rentals and properties for sale to find best investment opportunities",
+    "hobbyproject2name" => "gameformykids",
+    "hobbyproject2desc" => "Simple 3D game built to explore game development while creating something fun for my kids",
 
 
     "contacttext" => "Please feel free to write anything you have on mind. I am looking forward to it :)",
@@ -191,7 +223,7 @@ return [
 
 
 
-    "somesexyquote" => "it is funny that all the hard work we did to succeed will people call either talent or luck",
-    "norightsreserved" => "@2018 No rights reserved. Feel free to share or use whatever you wish to.",
+    "somesexyquote" => "The right question to ask in a job interview or on a date is not, 'What am I getting?' The right question to ask is, 'What am I becoming?",
+    "norightsreserved" => "@2026 No rights reserved. Feel free to share or use whatever you wish to.",
 
 ];

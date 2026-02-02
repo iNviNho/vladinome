@@ -24,7 +24,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -49,36 +49,22 @@
     {{--MOBILE CONTENT--}}
     <div class="navigation-mobile-content">
         <div class="close-mobile-navigation">
-            <span class="fas fa-times"></span>
+            <span class="bi bi-x"></span>
         </div>
         <div class="navigation-mobile-content-inner">
-            <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
+            <a href="/"><h1>vladino.com <span class="fas fa-laptop-code"></span></h1></a>
             <ul>
                 <li>
-                    <a href="{{route("home", ["locale" => App::getLocale()])}}"
+                    <a href="{{route("home")}}"
                        @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
                 </li>
                 <li>
-                    <a href="{{route("resume", ["locale" => App::getLocale()])}}"
+                    <a href="{{route("resume")}}"
                        @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
                 </li>
                 <li>
-                    <a href="{{route("contact", ["locale" => App::getLocale()])}}"
+                    <a href="{{route("contact")}}"
                        @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
-                </li>
-            </ul>
-            <ul class="lang-ul">
-                {{--LOCALES HANDLING--}}
-                @foreach ($locales as $key => $value)
-                    <li >
-                        <a @if ($key == App::getLocale())
-                           class="active"
-                           @endif
-                           href="{{route(Request::route()->getName(), ["locale" => $key])}}">{{$value}}</a>
-                    </li>
-                @endforeach
-                <li >
-                    <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="@lang("base.comingsoon")!">DE</a>
                 </li>
             </ul>
         </div>
@@ -91,42 +77,28 @@
         @endif
         <section class="top-bar @if (Request::route()->getName() == "home") top-bar-layout @endif">
             <section class="logo">
-                <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
+                <a href="/"><h1>vladino.com <span class="bi bi-laptop"></span></h1></a>
             </section>
             <nav class="navigation navigation-desktop">
-                <ul class="lang-ul">
-                    {{--LOCALES HANDLING--}}
-                    @foreach ($locales as $key => $value)
-                        <li >
-                            <a @if ($key == App::getLocale())
-                               class="active"
-                               @endif
-                               href="{{route(Request::route()->getName(), ["locale" => $key])}}">{{$value}}</a>
-                        </li>
-                    @endforeach
-                    <li >
-                        <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="@lang("base.comingsoon")!">DE</a>
-                    </li>
-                </ul>
                 <ul>
                     {{--MENU HANDLING--}}
                     <li>
-                        <a href="{{route("home", ["locale" => App::getLocale()])}}"
+                        <a href="{{route("home")}}"
                            @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
                     </li>
                     <li>
-                        <a href="{{route("resume", ["locale" => App::getLocale()])}}"
+                        <a href="{{route("resume")}}"
                            @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
                     </li>
                     <li>
-                        <a href="{{route("contact", ["locale" => App::getLocale()])}}"
+                        <a href="{{route("contact")}}"
                            @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
                     </li>
                 </ul>
                 <br class="clear">
             </nav>
             <div class="navigation navigation-mobile">
-                <span class="fas fa-bars"></span>
+                <span class="bi bi-list"></span>
             </div>
             <br class="clear">
         </section>
@@ -153,25 +125,28 @@
             <h1>“@lang("base.somesexyquote")“</h1>
             <ul class="menu-review">
                 <li>
-                    <a href="{{route("home", ["locale" => App::getLocale()])}}">@lang("base.home")</a>
+                    <a href="{{route("home")}}">@lang("base.home")</a>
                 </li>
                 <li>
-                    <a href="{{route("resume", ["locale" => App::getLocale()])}}">@lang("base.resume")</a>
+                    <a href="{{route("resume")}}">@lang("base.resume")</a>
                 </li>
                 <li>
-                    <a href="{{route("contact", ["locale" => App::getLocale()])}}">@lang("base.contact")</a>
+                    <a href="{{route("contact")}}">@lang("base.contact")</a>
                 </li>
             </ul>
             <p>@lang("base.norightsreserved")</p>
             <ul class="social-icons">
                 <li>
-                    <a href="https://www.facebook.com/vladinoo.vrab"><span class="fab fa-facebook-square"></span></a>
+                    <a href="https://www.linkedin.com/in/vladino-vrab/" target="_blank"><span class="bi bi-linkedin"></span></a>
                 </li>
                 <li>
-                    <a href="https://sk.linkedin.com/in/vladim%C3%ADr-vr%C3%A1b-73a441119"><span class="fab fa-linkedin"></span></a>
+                    <a href="https://x.com/vladinovrab" target="_blank"><span class="bi bi-twitter-x"></span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/iNviNho"><span class="fab fa-github"></span></a>
+                    <a href="https://medium.com/@vladino.vrab" target="_blank"><span class="bi bi-medium"></span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/iNviNho" target="_blank"><span class="bi bi-github"></span></a>
                 </li>
             </ul>
         </section>

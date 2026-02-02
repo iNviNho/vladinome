@@ -1,21 +1,30 @@
-FROM php:7.2.4-apache
+FROM php:8.2-apache
 
 RUN a2enmod rewrite
 
-RUN apt-get update
-
-RUN apt-get install -y nano git curl libicu-dev libxml2-dev libgmp-dev zlib1g-dev libgpgme11-dev && \
-    docker-php-ext-install \
-    gmp \
-    pdo_mysql \
-    zip \
-    intl
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        nano \
+        git \
+        curl \
+        libicu-dev \
+        libgmp-dev \
+        zlib1g-dev \
+        libzip-dev
+RUN docker-php-ext-install \
+        gmp \
+        zip \
+        intl
+RUN apt-get clean
 
 COPY docker/vhost /etc/apache2/sites-enabled/000-default.conf
 
-COPY ./composer.json ./composer.phar /deploy/
-
-WORKDIR /deploy
-RUN php composer.phar install
-
 WORKDIR /var/www/html
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+#COPY --chown=www-data:www-data composer.json /deploy/
+#COPY --chown=www-data:www-data . /deploy/
+#
+#RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
+#    composer install --no-interaction --prefer-dist

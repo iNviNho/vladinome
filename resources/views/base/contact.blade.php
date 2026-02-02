@@ -4,30 +4,13 @@
 
     <section class="contact base-section">
         <div class="inner">
-            <h1>@lang("base.contactsmall")</h1>
-            <p>@lang("base.contacttext")</p>
-            <form action="/{{App::getLocale()}}/contact/submit" method="post" autocomplete="off">
-                {{csrf_field()}}
-                <div class="form-group">
-                    <label >@lang("base.contactname"):</label>
-                    <input type="text" name="name" class="form-control" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label >@lang("base.contactmail"):</label>
-                    <input type="text" name="mail" class="form-control" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label >@lang("base.contactsubject"):</label>
-                    <input type="text" name="subject" class="form-control" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label >TEXT:</label>
-                    <textarea type="text" name="text" class="form-control" rows="7" autocomplete="off"></textarea>
-                </div>
-                <div class="form-group" style="text-align: center;">
-                    <button type="submit" class="hvr-bounce-to-right" href="/{{App::getLocale() . "/resume"}}">@lang("base.contactsayhello")</button>
-                </div>
-            </form>
+            <h1>Contact</h1>
+            <p>Want to get in touch with me?</p>
+            <p><span class="bi bi-envelope"></span> <a href="mailto:vladino.vrab@gmail.com" target="_blank" style="margin-top: 0;"> vladino.vrab@gmail.com</a></p>
+            <p><span class="bi bi-linkedin"></span> <a href="https://www.linkedin.com/in/vladino-vrab/" target="_blank" style="margin-top: 0;"> Vladimír Vráb</a></p>
+            <p><span class="bi bi-twitter-x"></span> <a href="https://x.com/vladinovrab" target="_blank" style="margin-top: 0;"> vladinovrab</a></p>
+            <p><span class="bi bi-medium"></span> <a href="https://medium.com/@vladino.vrab" target="_blank" style="margin-top: 0;"> @vladino.vrab</a></p>
+            <p><span class="bi bi-github"></span> <a href="https://github.com/iNviNho" target="_blank" style="margin-top: 0;"> iNviNho</a></p>
         </div>
     </section>
 

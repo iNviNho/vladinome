@@ -69,20 +69,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Locale Configuration
-    |--------------------------------------------------------------------------
-    |
-    | The application locale determines the default locale that will be used
-    | by the translation service provider. You are free to set this value
-    | to any of the locales which will be supported by the application.
-    |
-    */
-
-    'locale' => 'en',
-    "locales" => ["sk", "en", "de"],
-
-    /*
-    |--------------------------------------------------------------------------
     | Application Fallback Locale
     |--------------------------------------------------------------------------
     |
@@ -91,8 +77,6 @@ return [
     | the language folders that are provided through your application.
     |
     */
-
-    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
