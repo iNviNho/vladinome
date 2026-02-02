@@ -1,7 +1,7 @@
 @font-face {
     font-family: GothamLight;
-    src: url("/fonts/gothamlight.svg") format("svg"),
-        url("/fonts/gothamlight.ttf") format("truetype");
+    src: url("../fonts/gothamlight.svg") format("svg"),
+        url("../fonts/gothamlight.ttf") format("truetype");
 }
 
 html, body {
