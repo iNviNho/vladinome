@@ -8,7 +8,7 @@
     <section class="base-section">
         <section class="inner">
             <h1>@lang("base.whoami")</h1>
-            <p>@lang("base.whoamitext",  ["years" => $interval->y, "months" => $interval->m, "days" => $interval->d])</p>
+            <p>@lang("base.whoamitext")</p>
             <a class="hvr-bounce-to-right" href="{{App::getLocale() . "/resume"}}">@lang("base.resume")</a>
         </section>
     </section>
@@ -58,22 +58,22 @@
             <h1>@lang("base.lifeofadeveloper")</h1>
 
             <div class="gallery-wrapper">
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-my-girlfriend.jpg")}}" style="background-image: url({{assetn("images/me-and-my-girlfriend.jpg")}})"></div>
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-nature.jpg")}}" style="background-image: url({{assetn("images/me-and-nature.jpg")}})"></div>
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/IMG_7743.jpeg")}}" style="background-image: url({{assetn("images/IMG_7743.jpeg")}})"></div>
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/IMG_5903.JPG")}}" style="background-image: url({{assetn("images/IMG_5903.JPG")}})"></div>
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-friends-nature.jpg")}}" style="background-image: url({{assetn("images/me-and-friends-nature.jpg")}})"></div>
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/IMG_3931.jpeg")}}" style="background-image: url({{assetn("images/IMG_3931.jpeg")}})"></div>
+{{----}}
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/IMG_7442.JPG")}}" style="background-image: url({{assetn("images/IMG_7442.JPG")}})"></div>
                 <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-my-dog.jpg")}}" style="background-image: url({{assetn("images/me-and-my-dog.jpg")}})"></div>
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-programming.JPG")}}" style="background-image: url({{assetn("images/me-and-programming.JPG")}})"></div>
-
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-michalovce.JPG")}}" style="background-image: url({{assetn("images/me-and-michalovce.JPG")}})"></div>
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-my-friends.JPG")}}" style="background-image: url({{assetn("images/me-and-my-friends.JPG")}})"></div>
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-my-home.jpg")}}" style="background-image: url({{assetn("images/me-and-my-home.jpg")}})"></div>
-                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-my-car.JPG")}}" style="background-image: url({{assetn("images/me-and-my-car.JPG")}})"></div>
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/me-and-nature.jpg")}}" style="background-image: url({{assetn("images/me-and-nature.jpg")}})"></div>
+                <div class="gallery-box" data-fancybox="gallery" href="{{assetn("images/vladimir-vrab.jpg")}}" style="background-image: url({{assetn("images/vladimir-vrab.JPG")}})"></div>
 
                 <br class="clear">
             </div>
 
             <br class="clear">
 
-            <a class="hvr-bounce-to-right" href="{{App::getLocale() . "/contact"}}">@lang("base.contact")</a>
+            <a class="hvr-bounce-to-right" href="/contact">@lang("base.contact")</a>
 
         </section>
     </section>
